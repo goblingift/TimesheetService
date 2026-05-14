@@ -1,0 +1,560 @@
+[
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-01T08:07:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 1,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-02T09:14:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 2,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-03T07:21:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 3,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-04T08:28:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 4,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-05T09:35:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 5,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-06T07:42:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 6,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-07T08:49:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 7,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-08T09:56:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 8,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-09T07:03:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 9,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-10T08:10:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 10,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-11T09:17:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 11,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-12T07:24:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 12,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-13T08:31:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 13,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-14T09:38:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 14,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-15T07:45:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 15,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-16T08:52:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 16,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-17T09:59:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 17,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-18T07:06:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 18,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-19T08:13:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 19,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-20T09:20:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 20,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-21T07:27:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 21,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-22T08:34:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 22,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-23T09:41:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 23,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-24T07:48:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 24,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-25T08:55:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 25,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-26T09:02:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 26,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-27T07:09:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 27,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-28T08:16:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 28,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-29T09:23:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 29,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-30T07:30:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 30,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1001,
+    "recordedAt": "2026-01-31T08:37:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 31,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-01T08:07:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 1,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-02T09:14:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 2,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-03T07:21:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 3,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-04T08:28:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 4,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-05T09:35:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 5,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-06T07:42:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 6,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-07T08:49:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 7,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-08T09:56:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 8,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-09T07:03:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 9,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-10T08:10:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 10,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-11T09:17:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 11,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-12T07:24:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 12,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-13T08:31:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 13,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-14T09:38:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 14,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-15T07:45:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 15,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-16T08:52:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 16,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-17T09:59:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 17,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-18T07:06:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 18,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-19T08:13:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 19,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-20T09:20:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 20,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-21T07:27:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 21,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-22T08:34:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 22,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-23T09:41:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 23,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-24T07:48:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 24,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-25T08:55:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 25,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 9.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-26T09:02:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 26,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 4.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-27T07:09:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 27,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 6.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-28T08:16:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 28,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-29T09:23:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 29,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 7.5
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-30T07:30:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 30,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.0
+  },
+  {
+    "employeeId": 1002,
+    "recordedAt": "2026-01-31T08:37:00Z",
+    "recordedBy": 9001,
+    "workDateDay": 31,
+    "workDateMonth": 1,
+    "workDateYear": 2026,
+    "workedHours": 8.5
+  }
+]
