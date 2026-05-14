@@ -22,11 +22,10 @@ public class TimesheetController {
     private final TimesheetService timesheetService;
 
     @PostMapping
-    public ResponseEntity<TimesheetDto> createTimesheet(@Valid @RequestBody TimesheetDto timesheetDto) {
-        TimesheetDto savedTimesheet = timesheetService.saveTimesheet(timesheetDto);
-        // TODO: Check if the savedTimesheet equals the dto of this request
+    public ResponseEntity<String> createTimesheet(@Valid @RequestBody TimesheetDto timesheetDto) {
+        boolean savedTimesheet = timesheetService.saveTimesheet(timesheetDto);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(savedTimesheet);
+        return ResponseEntity.status(HttpStatus.CREATED).body(String.valueOf(savedTimesheet));
     }
 
 }

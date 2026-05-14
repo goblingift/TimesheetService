@@ -7,6 +7,8 @@ import gift.goblin.timesheet.mapper.TimesheetMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -24,7 +26,8 @@ public class TimesheetService {
      * @param timesheetDto dto with all required informations for the new timesheet entry.
      * @return the saved entity with all its fields.
      */
-    public TimesheetDto saveTimesheet(TimesheetDto timesheetDto) {
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    public boolean saveTimesheet(TimesheetDto timesheetDto) {
 
         log.info("Called saveTimesheet with dto : {}", timesheetDto);
 
@@ -32,17 +35,32 @@ public class TimesheetService {
         if (!existingEntries.isEmpty()) {
             log.warn("Found existing entries for your new timesheet entry: {}", (long) existingEntries.size());
             Timesheet existingEntry = existingEntries.getFirst();
-            TimesheetDto mappedExistingEntry = timesheetMapper.toDto(existingEntry);
-            log.warn("Existing timesheet entry: {}", mappedExistingEntry);
-            return mappedExistingEntry;
+            return replaceExistingTimesheet(existingEntry, timesheetDto);
         } else {
             Timesheet entity = timesheetMapper.toEntity(timesheetDto);
             Timesheet savedEntity = timesheetRepository.save(entity);
             log.info("Saved new timesheet entry: {}", savedEntity);
-            return timesheetMapper.toDto(savedEntity);
+            return true;
         }
 
     }
+
+    private boolean replaceExistingTimesheet(Timesheet existingEntry, TimesheetDto newTimesheetDto) {
+
+        if (existingEntry.getRecordedAt().isBefore(newTimesheetDto.getRecordedAt())) {
+            log.info("The existing timesheet {} was recorded before the new timesheet entry {} - replace with new data!", existingEntry, newTimesheetDto);
+            timesheetRepository.delete(existingEntry);
+            timesheetRepository.flush();
+            Timesheet newEntity = timesheetMapper.toEntity(newTimesheetDto);
+            timesheetRepository.save(newEntity);
+            return true;
+        } else {
+            log.debug("Dont replace existing {} timesheet entry", existingEntry);
+            return false;
+        }
+
+    }
+
 
 
 }
