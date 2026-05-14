@@ -29,3 +29,4 @@ replay_pid*
 
 # Built files
 /target
+src/main/resources/application.properties

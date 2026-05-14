@@ -2,7 +2,12 @@
 SpringBoot Microservice, to simulate the concurrent saving of timesheets into a simple h2 database.
 It offers a REST-endpoint and a scheduler, which will fetch every 60 seconds new timesheet-data from an external source (Simulated with test-data).
 
+# Before startup
+1. Rename the application-example.properties into application.properties
+2. Replace the external endpoint in the application.properties file with your AWS REST-Endpoint, property-name: _external.timesheet.api.base-url_
+
 # Database Access
+After starting up this application, you can access the H2 console by doing:
 1. Open this URL in your browser: http://localhost:8080/h2-console and enter these values:
 2. Saved Settings: Generic H2 (Embedded)
 3. Driver Class:org.h2.Driver
