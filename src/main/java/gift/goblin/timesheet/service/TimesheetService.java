@@ -25,6 +25,9 @@ public class TimesheetService {
      * @return the saved entity with all its fields.
      */
     public TimesheetDto saveTimesheet(TimesheetDto timesheetDto) {
+
+        log.info("Called saveTimesheet with dto : {}", timesheetDto);
+
         List<Timesheet> existingEntries = timesheetRepository.getTimesheetByEmployeeIdAndWorkDate(timesheetDto.getEmployeeId(), timesheetDto.getWorkDate());
         if (!existingEntries.isEmpty()) {
             log.warn("Found existing entries for your new timesheet entry: {}", (long) existingEntries.size());

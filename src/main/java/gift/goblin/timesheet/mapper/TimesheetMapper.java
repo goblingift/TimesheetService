@@ -29,7 +29,6 @@ public class TimesheetMapper {
         }
 
         Timesheet entity = new Timesheet();
-        entity.setId(dto.getId());
         entity.setEmployeeId(dto.getEmployeeId());
         entity.setRecordedAt(dto.getRecordedAt());
         entity.setRecordedBy(dto.getRecordedBy());
