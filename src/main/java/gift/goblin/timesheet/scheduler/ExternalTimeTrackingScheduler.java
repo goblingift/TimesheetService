@@ -19,24 +19,12 @@ import java.util.List;
 public class ExternalTimeTrackingScheduler {
 
     private final ExternalTimeTrackingService externalTimeTrackingService;
-    private final ExternalTimeTrackingClient externalTimeTrackingClient;
 
     @Scheduled(fixedRate = 60000)
     public void fetchExternalTimesheets() {
-
-        List<ExternalTimesheetDto> allTimesheets = new ArrayList<>();
-
-        for (int i = 0; i < 12; i++) {
-            YearMonth targetYearMonth = YearMonth.now().minusMonths(i);
-            List<ExternalTimesheetDto> externalTimesheets = externalTimeTrackingClient.getExternalTimesheets(targetYearMonth.getMonthValue(),
-                    targetYearMonth.getYear());
-            log.info("Successfully fetched {} timesheets for the YearMonth: {}", externalTimesheets.size(),  targetYearMonth);
-            allTimesheets.addAll(externalTimesheets);
-        }
-
-        log.info("Done with fetching timesheets- got {} timesheets from external API.", allTimesheets.size());
-
-        externalTimeTrackingService.saveExternalTimesheet(allTimesheets);
+        log.info("TS-1.1: Triggered ExternalTimeTrackingScheduler- Fetching timesheets from external API and save into DB.");
+        externalTimeTrackingService.fetchAndSaveExternalTimesheets();
+        log.info("TS-1.2: Done with fetching and storing timesheets.");
     }
 
 }
