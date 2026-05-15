@@ -7,6 +7,7 @@ import gift.goblin.timesheet.jpa.repo.TimesheetRepository;
 import gift.goblin.timesheet.mapper.TimesheetMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.orm.ObjectOptimisticLockingFailureException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -21,6 +22,9 @@ public class TimesheetService {
 
     private final TimesheetRepository timesheetRepository;
     private final TimesheetMapper timesheetMapper;
+
+    @Value("${app.simulate-slow-database:false}")
+    private boolean simulateDatabaseDelay;
 
     /**
      * Saves the new timesheet with the given informations of the dto. If there´s already an entry for the employee on the
@@ -41,7 +45,8 @@ public class TimesheetService {
             return replaceExistingTimesheet(existingEntry, timesheetDto);
         } else {
             Timesheet entity = timesheetMapper.toEntity(timesheetDto);
-            Timesheet savedEntity = timesheetRepository.save(entity);
+            simulateSlowDatabase(simulateDatabaseDelay);
+            Timesheet savedEntity = timesheetRepository.saveAndFlush(entity);
             log.info("Saved new timesheet entry: {}", savedEntity);
             return true;
         }
@@ -57,7 +62,8 @@ public class TimesheetService {
             existingEntry.setWorkedHours(newTimesheetDto.getWorkedHours());
 
             try {
-                timesheetRepository.save(existingEntry);
+                simulateSlowDatabase(simulateDatabaseDelay);
+                timesheetRepository.saveAndFlush(existingEntry);
                 return true;
             } catch (ObjectOptimisticLockingFailureException e) {
                 throw new TimesheetConcurrencyException(existingEntry.getId().toString(), existingEntry.getEmployeeId().toString(), existingEntry.getWorkDate());
@@ -67,6 +73,17 @@ public class TimesheetService {
             return false;
         }
 
+    }
+
+    private void simulateSlowDatabase(boolean simulateDatabaseDelayEnabled) {
+        if (simulateDatabaseDelayEnabled) {
+            log.info("Simulate slow database delay enabled- entering 10 second sleep now...");
+            try {
+                Thread.sleep(10_000);
+            } catch (InterruptedException e) {
+                log.error(e.getMessage(), e);
+            }
+        }
     }
 
 
