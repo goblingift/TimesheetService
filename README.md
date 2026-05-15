@@ -16,6 +16,10 @@ After starting up this application, you can access the H2 console by doing:
 6. Password: LEAVE EMPTY
 7. Click "Connect" - you should see the TIMESHEETS database on the top left
 
+# Swagger/Open-API Access
+After starting up this application, you can access it via browser:
+http://localhost:8080/swagger-ui/index.html
+
 # AWS Lambda/API-Gateway
 To mimic an external time tracking system, you can use the files inside the folder /aws.
 This service is able to return you example timesheets for 2026, for the months January-April.

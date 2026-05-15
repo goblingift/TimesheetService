@@ -1,6 +1,7 @@
 package gift.goblin.timesheet.controller;
 
 import gift.goblin.timesheet.dto.TimesheetDto;
+import gift.goblin.timesheet.exception.TimesheetConcurrencyException;
 import gift.goblin.timesheet.jpa.repo.TimesheetRepository;
 import gift.goblin.timesheet.service.TimesheetService;
 import jakarta.validation.Valid;
@@ -23,9 +24,14 @@ public class TimesheetController {
 
     @PostMapping
     public ResponseEntity<String> createTimesheet(@Valid @RequestBody TimesheetDto timesheetDto) {
-        boolean savedTimesheet = timesheetService.saveTimesheet(timesheetDto);
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(String.valueOf(savedTimesheet));
+        log.info("Called createTimesheet REST-POST with dto : {}", timesheetDto);
+        try {
+            boolean savedTimesheet = timesheetService.saveTimesheet(timesheetDto);
+            return ResponseEntity.status(HttpStatus.CREATED).body(String.valueOf(savedTimesheet));
+        } catch (TimesheetConcurrencyException e) {
+            log.error(e.getMessage());
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+        }
     }
 
 }

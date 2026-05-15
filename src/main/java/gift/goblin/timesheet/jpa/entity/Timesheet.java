@@ -26,13 +26,17 @@ public class Timesheet {
     @GeneratedValue
     private UUID id;
 
+    @Version
+    @Column(nullable = false)
+    private Integer version;
+
     @Column(nullable = false)
     private Integer employeeId;
 
     /**
      * Contains the timestamp, when the user has submitted/maintained that timesheet entry.
      */
-    @Column(nullable = false, updatable = false)
+    @Column(nullable = false)
     private Instant recordedAt;
 
     /**
